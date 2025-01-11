@@ -1,6 +1,7 @@
-const tg = window.Telegram.WebApp;
-const user = tg.initialDataUnsafe.user;
+
 export function useTelegram() {
+    const tg = window.Telegram.WebApp;
+const user = tg.initialDataUnsafe?.user;
     const onClose = () => {
         tg.close()
       }
