@@ -8,7 +8,7 @@ import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 
 function App() {
-  const {onToggleButton, tg} = useTelegram()
+  const {tg} = useTelegram()
 
   useEffect(() => {
     tg.ready()
