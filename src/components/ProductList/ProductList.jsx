@@ -29,13 +29,13 @@ const ProductList = () => {
             const data = {
                 products: addedItems,
                 totalPrice: getTotalPrice(addedItems),
-                queryId
+                queryId,
             }
             console.log(data)
             fetch('http://45.138.163.38:8000/web-data', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(data)
             })
@@ -46,7 +46,7 @@ const ProductList = () => {
             return () => {
                 tg.offEvent('mainButtonClicked', onSendData)
             }
-        }, [tg, onSendData])
+        }, [onSendData])
 
 
     const onAdd = (product) => {
