@@ -46,11 +46,6 @@ const ProductList = () => {
                 tg.offEvent('mainButtonClicked', onSendData)
             }
         }, [tg, onSendData])
-        useEffect(() => {
-            tg.MainButton.setParams({
-                text: 'Отправить данные'
-            })
-        })
 
 
     const onAdd = (product) => {
