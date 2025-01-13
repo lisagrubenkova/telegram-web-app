@@ -46,6 +46,7 @@ const ProductList = () => {
             return () => {
                 tg.offEvent('mainButtonClicked', onSendData)
             }
+            // eslint-disable-next-line
         }, [onSendData])
 
 
